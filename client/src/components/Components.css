@@ -1,0 +1,24 @@
+.loginForm {
+  background-color: red;
+  height: auto;
+  width: 400px;
+  padding: 2rem 1rem;
+  margin-top: 10rem;
+  font-weight: bolder;
+  background-color: rgba(245, 242, 235, 0.747);
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 10px 10px 5px 5px rgba(146, 146, 146, 0.445);
+}
+
+.loginForm__heading {
+  text-align: center;
+}
+
+.loginBtn {
+  background-color: black !important;
+  border: none;
+  padding: 4px !important;
+  color: white !important;
+}
