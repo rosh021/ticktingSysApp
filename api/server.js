@@ -6,6 +6,11 @@ const PORT = process.env.PORT || 8000;
 app.use(cors());
 app.use(express.json());
 
+// database connection
+
+import connectDatabase from "./src/config/dbConfig.js";
+connectDatabase();
+
 app.get("/", (req, res) => {
   res.send({
     message: "Welcome to Server End Point",
