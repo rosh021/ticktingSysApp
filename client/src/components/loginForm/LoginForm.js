@@ -4,9 +4,7 @@ import Form from "react-bootstrap/Form";
 import "../Components.css";
 
 export const LoginForm = () => {
-  const handelOnClick = (e) => {
-    e.currentTarget.classList.remove("btn-primary");
-  };
+  
   return (
     <Form className="loginForm">
       <h4 className="loginForm__heading">Welcome Back</h4>
@@ -23,16 +21,10 @@ export const LoginForm = () => {
       <Form.Group className="mb-3" controlId="formBasicCheckbox">
         <a href="#">Forget your Password ?</a>
       </Form.Group>
-      <Button
-        style={{ all: "unset" }}
-        className="loginBtn"
-        variant="primary"
-        type="submit"
-        onClick={handelOnClick}
-      >
-        Submit
-      </Button>
-      <p className="text-end">
+      <button className="loginBtn" type="submit">
+        SignIn
+      </button>
+      <p className="text-end mt-2">
         Don't have account ? <a href="#">Register</a>
       </p>
     </Form>
